@@ -22,7 +22,7 @@
             var divs = document.querySelectorAll('div');
             console.log("Checking " + divs.length + " elements for ads");
             for (var i = 0, len = divs.length; i < len; i++) {
-                if (divs[i].style.zIndex > 100 && divs[i].clientWidth/document.width > 0.3) {
+                if (divs[i].style.zIndex > 990) {
                     console.log("Ad Detected: ");
                     console.log(divs[i]);
                     divs[i].parentNode.removeChild(divs[i]);
