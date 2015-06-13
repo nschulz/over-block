@@ -1,6 +1,4 @@
 {
-    "browser_action": {
-    },
     "content_scripts": [
         {
             "matches": ["http://*/*", "https://*/*"],
@@ -10,12 +8,11 @@
             "run_at": "document_idle"
         }
     ],
-    "description": "This extension shows a Google Image search result for the current page",
+    "description": "This extension removes annoying ad popovers from your browsing experience.",
     "manifest_version": 2,
     "name": "Popover Ad Block",
     "permissions": [
-        "activeTab",
-        "https://ajax.googleapis.com/"
+        "activeTab"
     ],
     "version": "1.0"
 }
