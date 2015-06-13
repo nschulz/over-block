@@ -1,0 +1,21 @@
+{
+    "browser_action": {
+    },
+    "content_scripts": [
+        {
+            "matches": ["http://*/*", "https://*/*"],
+            "js": [
+                "over-block.js"
+            ],
+            "run_at": "document_idle"
+        }
+    ],
+    "description": "This extension shows a Google Image search result for the current page",
+    "manifest_version": 2,
+    "name": "Popover Ad Block",
+    "permissions": [
+        "activeTab",
+        "https://ajax.googleapis.com/"
+    ],
+    "version": "1.0"
+}
